@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Karim"
+      name: "Hisham"
     };
   }
 
@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="app">
         <SayHi />
-        <SayHello color="black" name={this.state.name} />
+        <SayHello color="blue" name={this.state.name} />
         <Search handleInput={this.handleInputChange} />
       </div>
     );
