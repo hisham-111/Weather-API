@@ -4,6 +4,18 @@ import Search from "./components/Search";
 import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
 
+import storm from "./img/weather-icons/storm.svg";
+
+
+
+
+
+
+
+
+
+
+
 import "./App.css";
 
 class App extends Component {
@@ -20,12 +32,15 @@ class App extends Component {
 
   render() {
     return (
+
+
+
     
       <div className="app">
    
       <div className="App__search">
         <input type="text" id="input-name"  placeholder="London"/>
-        <button> Say Hello </button>
+        <button> FIND WEATHER </button>
       </div>
         
   
@@ -34,7 +49,9 @@ class App extends Component {
         <Search handleInput={this.handleInputChange} /> */}
 
         <div className="app__header">
-          {/* <img src="../img/weather-icons/clear.svg" alt="placeholder"></img> */}
+          
+        {/* <img src="{storm}" alt="storm icon" />
+        <img src="../img/weather-icons/storm.svg"></img> */}
 
 
         
