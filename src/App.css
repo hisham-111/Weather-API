@@ -1,7 +1,6 @@
 
 *{
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -18,6 +17,11 @@ body{
   transition: background-color 1s ease-in;
 
   
+}
+
+
+img{
+  width: 20%;
 }
 
 .input {
@@ -84,32 +88,7 @@ align-items: center;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.app__header,
+.app__mainLogo,
 .app__main {
   width: 100%;
   display: flex;
@@ -121,37 +100,37 @@ align-items: center;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.app__header  svg {
+.app__mainLogo  img {
   width: 300px;
   height: 300px;
   text-align: center;
 }
 
-.app__header h3 {
+.app__mainLogo h3 {
   margin-bottom: 30px;
 }
 
-.app__header h2 {
+.app__mainLogo h2 {
   margin-bottom: 30px;
 }
 
 
-.app__header .st0{fill:#F4A71D;}  .app__header .st1{fill:#FFFFFF;}
+.app__mainLogo .st0{fill:#F4A71D;}  .app__mainLogo .st1{fill:#FFFFFF;}
 
 
 
-.app__header h3 {
+.app__mainLogo h3 {
   color: white;
   font-weight: bold;
 }
 
 
 
-.app__header span{
+.app__mainLogo span{
   font-weight: 400;
 }
 
-.app__header span{
+.app__mainLogo span{
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -171,7 +150,7 @@ align-items: center;
 
 @media (max-width: 480px) {
 
-.app__header svg{
+.app__mainLogo img{
 
   width:45%;
   text-align: center;
@@ -205,7 +184,6 @@ align-items: center;
 .app__main .st0{fill:#F4A71D;}  .app__main .st1{fill:#FFFFFF;}
 
 
-/*  Search bar */
 
 /* Current weather */
 

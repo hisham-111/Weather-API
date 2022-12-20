@@ -85,7 +85,8 @@ A few things to think of:
 
 Once you have your design working with placeholder images, you can try using the weather icons we've provided.
 
-There is a special way to show images from a React app created with create-react-app. You can [read about how to add and use images in a create-react-app project in the official docs](https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files), but in short, you'll need to do these two things:
+There is a special way to show images from a React app created with create-react-app. You can [read about how to add and use images in a create-react-app project in the official docs](https://facebook.github.io/create-r
+eact-app/docs/adding-images-fonts-and-files), but in short, you'll need to do these two things:
 
 At the top of your component, import the image:
 
