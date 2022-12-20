@@ -45,12 +45,19 @@ class Search extends React.Component {
 //   }
 // }
 
+state = {
+  input: "",
+};
+
 
 render(){
   return(
+
+   
+
     <div className="App__search">
-       <input type="text" id="input-name"  placeholder="London"/>
-        <button> FIND WEATHER </button>
+        <input type="text" id="input-name"  placeholder="Type the city name"  className="searchInput"/>
+        <button className="buttonSearch"> FIND WEATHER </button>
     </div>
   );
 }

@@ -3,11 +3,12 @@ import React, { Component } from "react";
 
 import Search    from "./components/Search";
 import CurrentWeather from "./components/CurrentWeather";
-import app__mainLogo from "./components/app__mainLogo";
+import FakeWeather from "./Data/FakeWeather.json";
 
 
 
-import storm from "./img/weather-icons/storm.svg";
+
+import mostlycloudy from "./img/weather-icons/mostlycloudy.svg";
 
 
 
@@ -52,7 +53,7 @@ class App extends Component {
         {/* <app__mainLogo/> */}
 
      <div className="app__mainLogo">   
-     <img src={storm} alt="storm icon"/>
+     <img src={mostlycloudy} alt="storm icon"/>
      <h3>Overcast clouds</h3>
      <h2>
      Temperature <span> 10 &deg; to 11 &deg; C</span>
@@ -70,7 +71,19 @@ class App extends Component {
 
 
       </div>
+
+
+
+
     );
+
+
+
+
+                    <themainWeather
+                        Data={FakeWeather}
+                        p={FakeWeather.list[4].weather[0].main.toLowerCase()}
+                    ></themainWeather>
   }
 }
 
