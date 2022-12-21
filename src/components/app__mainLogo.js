@@ -9,7 +9,7 @@ import storm from "../img/weather-icons/storm.svg";
 
 
 
-class themainLogo extends React.Component
+class app__mainLogo extends React.Component
 {
 
 

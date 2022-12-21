@@ -49,8 +49,8 @@ class App extends Component {
       <div className="app">
 
 
-        <Search/>
-        {/* <app__mainLogo/> */}
+        <Search> </Search>
+        {/* start the app__mainLogo */}
 
      <div className="app__mainLogo">   
      <img src={mostlycloudy} alt="storm icon"/>
@@ -64,9 +64,89 @@ class App extends Component {
      <span> 1008.48</span>
      </h4>
     </div>
+        {/* end the app__mainLogo */}
+
+         <CurrentWeather> </CurrentWeather>
 
 
-        <CurrentWeather/>
+
+    <themainWeather
+     Data={FakeWeather}
+    img={FakeWeather.list[4].weather[0].main.toLowerCase()}>
+
+
+    </themainWeather>
+
+
+  <section className="allday">
+    <alltheWeather
+        time={FakeWeather.list[5].dt_txt.slice(11, 16)}
+        temp={(FakeWeather.list[5].main.temp - 273.15).toFixed()}>
+
+          
+         </alltheWeather>
+
+
+
+
+         <alltheWeather
+        time={FakeWeather.list[6].dt_txt.slice(11, 16)}
+        temp={(
+            FakeWeather.list[6].main.temp - 273.15
+        ).toFixed()}
+        ></alltheWeather>
+
+
+
+
+
+        <alltheWeather
+                time={FakeWeather.list[7].dt_txt.slice(11, 16)}
+                temp={(
+                    FakeWeather.list[7].main.temp - 273.15
+                ).toFixed()}
+            ></alltheWeather>
+
+
+          <alltheWeather
+              time={FakeWeather.list[8].dt_txt.slice(11, 16)}
+              temp={(
+                  FakeWeather.list[8].main.temp - 273.15
+              ).toFixed()}
+          ></alltheWeather>
+
+        <alltheWeather
+                time={FakeWeather.list[1].dt_txt.slice(11, 16)}
+                temp={(
+                    FakeWeather.list[1].main.temp - 273.15
+                ).toFixed()}
+            ></alltheWeather>
+
+    <alltheWeather
+        time={FakeWeather.list[2].dt_txt.slice(11, 16)}
+        temp={(
+            FakeWeather.list[2].main.temp - 273.15
+        ).toFixed()}
+    ></alltheWeather>
+</section>
+
+
+
+   
+ 
+
+
+     <alltheWeather
+        time={FakeWeather.list[3].dt_txt.slice(11, 16)}
+        img={FakeWeather.list[3].weather[0].main.toLowerCase()}
+        temp={(
+            FakeWeather.list[3].main.temp - 273.15
+        ).toFixed()}
+    ></alltheWeather>
+
+                  
+   
+ 
 
 
 
@@ -74,17 +154,13 @@ class App extends Component {
 
 
 
+ 
 
+   
     );
 
 
-
-
-                    <themainWeather
-                        Data={FakeWeather}
-                        p={FakeWeather.list[4].weather[0].main.toLowerCase()}
-                    ></themainWeather>
+    }
   }
-}
-
+    
 export default App;

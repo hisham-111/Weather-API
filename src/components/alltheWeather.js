@@ -10,30 +10,74 @@ import storm from "../img/weather-icons/storm.svg";
 import mostlycloudy from "../img/weather-icons/mostlycloudy.svg";
 import "./Search.css";
 class alltheWeather extends React.Component {
+
+
     state = {
         input: "",
     };
+
 
 
     render(){
 
 
         const imageSrc = (image) => {
-            if (image === "clouds") return cloudy;
-             if (image === "clear") return clear;
-             if (image === "mostlycloudy") return mostlycloudy;
-             if (image === "partlycloudy") return partlycloudy;
-             if (image === "snow") return snow;
-             if (image === "storm") return storm;
-             if (image === "rain") return rain;
-             if (image === "fog") return fog;
-             if (image === "drizzle") return drizzle;
+            if (time === "clouds") return cloudy;
+            else if (image === "clear"){
+                 return clear;
+            }
+            else if(image === "mostlycloudy"){
+                 return mostlycloudy;
+
+            }
+
+            else if (image === "partlycloudy") {
+                return partlycloudy;
+            }
+              
+            else if (image === "snow") {
+                 return snow;
+            }
+          
+            else if (image === "storm"){
+                return storm;
+            }
+            else if (image === "rain"){
+                return rain;
+            }
+            
+            else if (image === "fog"){
+                return fog;
+            }
              
-        return(
+            else if (image === "drizzle"){
+                return drizzle;
+            }
+             
+             
+            return (
+                <div>
+                    <p>{this.props.time}</p>
+                    <img
+                        src={imageSrc(this.props.img)}
+                        alt={this.props.img}
+                        height="100px"
+                        width="100px"
+                    />
+                    <p>
+                        {this.props.temp}
+                        &#8451;
+                    </p>
+                </div>
+            );
 
-            <p>{this.props.time}</p>
 
-        );
+
+
+
     }
+}
+}
+
 
     export default alltheWeather;
